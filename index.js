@@ -1,4 +1,5 @@
 const express = require('express');
+const open = require('open');
 
 const PORT = 3000;
 const URL = `http://localhost:${PORT}/`
@@ -10,4 +11,5 @@ server.get("*", (req, res) => {
 
 server.listen(PORT, () => {
     console.log(`Server running on ${URL}`);
+    open(URL, { wait: true })
 })
