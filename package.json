@@ -2,5 +2,19 @@
   "name": "first-dist",
   "dependencies": {
     "express": "^4.18.1"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "build": "pkg ."
+  },
+  "bin": "index.js",
+  "pkg": {
+    "outputPath": "dist",
+    "target": [
+      "node7"
+    ]
+  },
+  "devDependencies": {
+    "pkg": "^5.7.0"
   }
 }
